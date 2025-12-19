@@ -64,16 +64,6 @@ function App() {
 
         <br />
         <button type="submit">Submit</button>
-      
-        <div>
-          <label>Email</label>
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
-        </div>
-        
       </form>
     </div>
   );
