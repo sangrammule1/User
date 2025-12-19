@@ -8,3 +8,9 @@ class User(Base):
     first_name = Column(String(100))
     last_name = Column(String(100))
     phone = Column(String(20))
+    email = Column(
+        String(150),
+        nullable=True,
+        unique=True
+    )
+
