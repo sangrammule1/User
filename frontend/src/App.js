@@ -6,6 +6,7 @@ function App() {
     last_name: "",
     phone: "",
     email: "",
+  email: "",
   email: ""});
 
   const handleChange = (e) => {
@@ -61,6 +62,15 @@ function App() {
             required
           />
         </div>
+        <div>
+          <label>Email:</label><br/>
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+          />
+        </div>
+            
         <br />
         <button type="submit">Submit</button>
       </form>
