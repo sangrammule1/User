@@ -61,16 +61,6 @@ function App() {
             required
           />
         </div>
-        <div>
-          <label>Email</label>
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-          />
-        </div>
-            
-
         <br />
         <button type="submit">Submit</button>
       </form>
