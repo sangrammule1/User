@@ -4,5 +4,4 @@ from typing import Optional
 class UserCreate(BaseModel):
     first_name: str
     last_name: str
-    email: str
     phone: str
