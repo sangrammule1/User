@@ -5,7 +5,8 @@ function App() {
     first_name: "",
     last_name: "",
     phone: "",
-  email: ""});
+  email: "",
+  zipcode: ""});
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -68,6 +69,15 @@ function App() {
             onChange={handleChange}
           />
         </div>
+        <div>
+          <label>Zipcode:</label><br/>
+          <input
+            name="zipcode"
+            value={form.zipcode}
+            onChange={handleChange}
+          />
+        </div>
+            
             
             
         <br />
