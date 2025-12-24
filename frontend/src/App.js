@@ -6,7 +6,8 @@ function App() {
     last_name: "",
     phone: "",
   email: "",
-  zipcode: ""});
+  zipcode: "",
+    age: ""});
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -29,58 +30,68 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Registration Form</h2>
+      <h2 >Registration Form</h2 >
 
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>First Name:</label><br />
+        <div >
+          <label >First Name:</label > <br />
           <input
             name="first_name"
             value={form.first_name}
             onChange={handleChange}
             required
           />
-        </div>
+        </div >
 
-        <div>
-          <label>Last Name:</label><br />
+        <div >
+          <label >Last Name:</label > <br />
           <input
             name="last_name"
             value={form.last_name}
             onChange={handleChange}
             required
           />
-        </div>
+        </div >
 
-        <div>
-          <label>Phone:</label><br />
+        <div >
+          <label >Phone:</label > <br />
           <input
             name="phone"
             value={form.phone}
             onChange={handleChange}
             required
           />
-        </div> 
+        </div > 
 
-        <div>
-          <label>Email:</label><br />
+        <div >
+          <label >Email:</label > <br />
           <input
             name="email"
             value={form.email}
             onChange={handleChange}
             required
           />
-        </div>
+        </div >
         
         <div >
-          <label>Zipcode:</label><br />
+          <label >Zipcode:</label > <br />
           <input
             name="zipcode"
             value={form.zipcode}
             onChange={handleChange}
             required
           />
-        </div>
+        </div >
+        
+        <div >
+          <label >Age:</label > <br />
+          <input
+            name="age"
+            value={form.age}
+            onChange={handleChange}
+            required
+          />
+        </div >
         
         <br />
         <button type="submit">Submit</button>
