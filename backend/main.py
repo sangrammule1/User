@@ -42,3 +42,6 @@ def submit_form(user: schemas.UserCreate, db: Session = Depends(get_db)):
         "message": "Data saved successfully",
         "id": new_user.id
     }
+
+from backend.routes import model
+app.include_router(model.router)
