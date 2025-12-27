@@ -61,8 +61,17 @@ function App() {
             onChange={handleChange}
             required
           />
-        </div > 
+        </div >
         <br />
+        <div >
+          <label >Email:</label > <br />
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div >
