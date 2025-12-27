@@ -5,8 +5,8 @@ function App() {
     first_name: "",
     last_name: "",
     phone: "",
-  email: "",
-  zipcode: "",
+    email: "",
+    zipcode: "",
     age: ""});
 
   const handleChange = (e) => {
