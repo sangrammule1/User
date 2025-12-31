@@ -6,4 +6,3 @@ class UserCreate(BaseModel):
     last_name: str
     phone: str
     email: str
-    zipcode: str
