@@ -1,14 +1,11 @@
-```javascript
 import { useState } from "react";
 
 function App() {
   const [form, setForm] = useState({
     first_name: "",
     last_name: "",
-    phone: "",
-    email: "", // Email field added here
-    zipcode: "",
-    age: ""});
+    phone: ""
+    });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -63,15 +60,6 @@ function App() {
             required
           />
         </div >
-        <div> // Email input field added here
-          <label>Email:</label> <br />
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
         <button type="submit">Submit</button>
       </form>
     </div >
@@ -79,4 +67,3 @@ function App() {
 }
 
 export default App;
-```
