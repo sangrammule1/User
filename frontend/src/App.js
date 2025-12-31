@@ -5,7 +5,7 @@ function App() {
     first_name: "",
     last_name: "",
     phone: "",
-    email: "",
+    email: "", // Email field added here
     zipcode: "",
     age: ""});
 
@@ -62,6 +62,15 @@ function App() {
             required
           />
         </div >
+        <div> // Email input field added here
+          <label>Email:</label> <br />
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div >
