@@ -6,7 +6,8 @@ function App() {
     last_name: "",
     phone: "",
     email: "",
-    zipcode: ""
+    zipcode: "",
+    age: ""
     });
 
   const handleChange = (e) => {
@@ -76,6 +77,15 @@ function App() {
           <input
             name="zipcode"
             value={form.zipcode}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Age:</label> <br />
+          <input
+            name="age"
+            value={form.age}
             onChange={handleChange}
             required
           />
