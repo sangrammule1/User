@@ -7,4 +7,3 @@ class UserCreate(BaseModel):
     phone: str
     email: str
     zipcode: str
-    age: int
