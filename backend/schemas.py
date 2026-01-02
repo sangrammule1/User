@@ -8,3 +8,4 @@ class UserCreate(BaseModel):
     email: str
     zipcode: str
     age: int
+    gender: str
