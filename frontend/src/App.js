@@ -4,10 +4,7 @@ function App() {
   const [form, setForm] = useState({
     first_name: "",
     last_name: "",
-    phone: "",
-    email: "",
-    zipcode: "",
-    dob: ""
+    phone: ""
     });
 
   const handleChange = (e) => {
@@ -59,36 +56,6 @@ function App() {
           <input
             name="phone"
             value={form.phone}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        
-        <div >
-          <label >Email:</label > <br />
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        
-        <div >
-          <label >Zipcode:</label > <br />
-          <input
-            name="zipcode"
-            value={form.zipcode}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        
-        <div >
-          <label >DOB:</label > <br />
-          <input
-            name="dob"
-            value={form.dob}
             onChange={handleChange}
             required
           />
