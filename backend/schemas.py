@@ -7,3 +7,4 @@ class UserCreate(BaseModel):
     phone: str
     email: str
     zipcode: str
+    dob: Optional[str] = None

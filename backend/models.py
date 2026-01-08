@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Date
 from database import Base
 
 class User(Base):
@@ -10,3 +10,4 @@ class User(Base):
     phone = Column(String(20))
     email = Column(String(100))
     zipcode = Column(String(10))
+    dob = Column(Date)
