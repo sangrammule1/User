@@ -5,6 +5,7 @@ function App() {
     first_name: "",
     last_name: "",
     phone: "",
+    email: "",
     dob: "",
     zipcode: "",
     house_no: ""
@@ -63,6 +64,15 @@ function App() {
             required
           />
         </div>
+        <div >
+          <label >Email:</label > <br />
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+        </div >
         <div >
           <label >House No:</label > <br />
           <input
