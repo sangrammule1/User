@@ -61,16 +61,6 @@ function App() {
             required
           />
         </div>
-        
-        <div >
-          <label >DOB:</label > <br />
-          <input
-            name="dob"
-            value={form.dob}
-            onChange={handleChange}
-            required
-          />
-        </div>
         <br/>
         <button type="submit">Submit</button>
       </form>

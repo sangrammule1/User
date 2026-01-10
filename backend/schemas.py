@@ -5,4 +5,3 @@ class UserCreate(BaseModel):
     first_name: str
     last_name: str
     phone: str
-    dob: Optional[str] = None
