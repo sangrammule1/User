@@ -8,6 +8,3 @@ class User(Base):
     first_name = Column(String(100))
     last_name = Column(String(100))
     phone = Column(String(20))
-    zipcode = Column(String(10))
-    house_no = Column(String(50))
-    email = Column(String(100))
